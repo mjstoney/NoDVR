@@ -16,7 +16,7 @@ public class NodvrApplication {
 
 	@RequestMapping("/")
 	public String hello() {
-		return "Hello from Spring Boot";
+		return "Hello from San Jose";
 	}
 
 }
