@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'mvn install' 
+                sh 'mvn package' 
             }
         }
-        stage('deploy') { 
+        stage('Deploy') { 
             steps {
-                sh 'mvn spring-boot:run' 
+                sh 'java -jar ./target/*SNAPSHOT.jar' 
             }
         }
     }
